@@ -1,0 +1,11 @@
+#!/bin/sh
+
+set -e
+
+if [ "$1" = "remove" ] ; then
+	update-alternatives --remove privsep_helper /usr/bin/python2-privsep_helper
+fi
+
+#DEBHELPER#
+
+exit 0

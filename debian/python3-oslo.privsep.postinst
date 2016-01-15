@@ -1,0 +1,11 @@
+#!/bin/sh
+
+set -e
+
+if [ "$1" = "configure" ] ; then
+	update-alternatives --install /usr/bin/privsep_helper privsep_helper /usr/bin/python3-privsep_helper 200
+fi
+
+#DEBHELPER#
+
+exit 0
