@@ -56,7 +56,7 @@ Depends: python-babel,
 Suggests: python-oslo.privsep-doc,
 Description: OpenStack library for privilege separation - Python 2.7
  Oslo.privsep is the OpenStack library for privilege separation. It manages the
- user and groups for running daemons, and also leverage linux capabilities
+ user and groups for running daemons, and also leverage Linux capabilities
  features to avoid running as root.
  .
  This package contains the Python 2.7 module.
@@ -74,7 +74,7 @@ Depends: python3-babel,
 Suggests: python-oslo.privsep-doc,
 Description: OpenStack library for privilege separation - Python 3.x
  Oslo.privsep is the OpenStack library for privilege separation. It manages the
- user and groups for running daemons, and also leverage linux capabilities
+ user and groups for running daemons, and also leverage Linux capabilities
  features to avoid running as root.
  .
  This package contains the Python 3.x module.
@@ -86,7 +86,7 @@ Depends: ${misc:Depends},
          ${sphinxdoc:Depends},
 Description: OpenStack library for privilege separation - doc
  Oslo.privsep is the OpenStack library for privilege separation. It manages the
- user and groups for running daemons, and also leverage linux capabilities
+ user and groups for running daemons, and also leverage Linux capabilities
  features to avoid running as root.
  .
  This package contains the documentation.
