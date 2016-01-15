@@ -1,0 +1,92 @@
+Source: python-oslo.privsep
+Section: python
+Priority: optional
+Maintainer: PKG OpenStack <openstack-devel@lists.alioth.debian.org>
+Uploaders: Thomas Goirand <zigo@debian.org>,
+Build-Depends: debhelper (>= 9),
+               dh-python,
+               openstack-pkg-tools,
+               python-all,
+               python-pbr,
+               python-setuptools,
+               python-sphinx,
+               python3-all,
+               python3-pbr,
+               python3-setuptools,
+Build-Depends-Indep: python-babel,
+                     python-cffi,
+                     python-enum34,
+                     python-fixtures (>= 1.3.1),
+                     python-hacking,
+                     python-mock (>= 1.3),
+                     python-oslo.config (>= 3.2.0),
+                     python-oslo.i18n (>= 1.5.0),
+                     python-oslo.log (>= 1.14.0),
+                     python-oslo.utils (>= 3.2.0),
+                     python-oslosphinx (>= 2.5.0),
+                     python-oslotest (>= 1.10.0),
+                     python3-babel,
+                     python3-cffi,
+                     python3-fixtures (>= 1.3.1),
+                     python3-mock (>= 1.3),
+                     python3-oslo.config (>= 3.2.0),
+                     python3-oslo.i18n (>= 1.5.0),
+                     python3-oslo.log (>= 1.14.0),
+                     python3-oslo.utils (>= 3.2.0),
+                     python3-oslotest (>= 1.10.0),
+                     python3-subunit,
+                     subunit,
+                     testrepository,
+Standards-Version: 3.9.6
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=openstack/python-oslo.privsep.git
+Vcs-Git: git://anonscm.debian.org/openstack/python-oslo.privsep.git
+Homepage: http://launchpad.net/oslo
+
+Package: python-oslo.privsep
+Architecture: all
+Depends: python-babel,
+         python-cffi,
+         python-enum34,
+         python-oslo.config (>= 3.2.0),
+         python-oslo.i18n (>= 1.5.0),
+         python-oslo.log (>= 1.14.0),
+         python-oslo.utils (>= 3.2.0),
+         ${misc:Depends},
+         ${python:Depends},
+Suggests: python-oslo.privsep-doc,
+Description: OpenStack library for privilege separation - Python 2.7
+ Oslo.privsep is the OpenStack library for privilege separation. It manages the
+ user and groups for running daemons, and also leverage linux capabilities
+ features to avoid running as root.
+ .
+ This package contains the Python 2.7 module.
+
+Package: python3-oslo.privsep
+Architecture: all
+Depends: python3-babel,
+         python3-cffi,
+         python3-oslo.config (>= 3.2.0),
+         python3-oslo.i18n (>= 1.5.0),
+         python3-oslo.log (>= 1.14.0),
+         python3-oslo.utils (>= 3.2.0),
+         ${misc:Depends},
+         ${python3:Depends},
+Suggests: python-oslo.privsep-doc,
+Description: OpenStack library for privilege separation - Python 3.x
+ Oslo.privsep is the OpenStack library for privilege separation. It manages the
+ user and groups for running daemons, and also leverage linux capabilities
+ features to avoid running as root.
+ .
+ This package contains the Python 3.x module.
+
+Package: python-oslo.privsep-doc
+Section: doc
+Architecture: all
+Depends: ${misc:Depends},
+         ${sphinxdoc:Depends},
+Description: OpenStack library for privilege separation - doc
+ Oslo.privsep is the OpenStack library for privilege separation. It manages the
+ user and groups for running daemons, and also leverage linux capabilities
+ features to avoid running as root.
+ .
+ This package contains the documentation.

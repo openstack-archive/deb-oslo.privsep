@@ -1,0 +1,5 @@
+python-oslo.privsep (0.3.0-1) experimental; urgency=medium
+
+  * Initial release. (Closes: #811049)
+
+ -- Thomas Goirand <zigo@debian.org>  Fri, 15 Jan 2016 15:18:43 +0800
