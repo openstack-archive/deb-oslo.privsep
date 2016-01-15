@@ -3,7 +3,9 @@ Upstream-Name: oslo.privsep
 Source: http://launchpad.net/oslo
 
 Files: *
-Copyright: (c) 2016, OpenStack Foundation <openstack-dev@lists.openstack.org>
+Copyright: (c) 2014-2016, OpenStack Foundation <openstack-dev@lists.openstack.org>
+           (c) 2013, Hewlett-Packard Development Company, L.P.
+           (c) 2015, Rackspace Inc.
 License: Apache-2
 
 Files: debian/*
