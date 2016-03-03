@@ -21,8 +21,8 @@ override_dh_auto_install:
 			--root $(CURDIR)/debian/python3-oslo.privsep; \
 	done
 	rm -rf $(CURDIR)/debian/python*/usr/lib/python*/dist-packages/*.pth
-	mv $(CURDIR)/debian/python-oslo.privsep/usr/bin/privsep_helper $(CURDIR)/debian/python-oslo.privsep/usr/bin/python2-privsep_helper
-	mv $(CURDIR)/debian/python3-oslo.privsep/usr/bin/privsep_helper $(CURDIR)/debian/python3-oslo.privsep/usr/bin/python3-privsep_helper
+	mv $(CURDIR)/debian/python-oslo.privsep/usr/bin/privsep-helper $(CURDIR)/debian/python-oslo.privsep/usr/bin/python2-privsep-helper
+	mv $(CURDIR)/debian/python3-oslo.privsep/usr/bin/privsep-helper $(CURDIR)/debian/python3-oslo.privsep/usr/bin/python3-privsep-helper
 
 override_dh_auto_test:
 ifeq (,$(findstring nocheck, $(DEB_BUILD_OPTIONS)))

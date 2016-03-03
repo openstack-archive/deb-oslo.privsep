@@ -3,7 +3,7 @@
 set -e
 
 if [ "$1" = "remove" ] || [ "$1" = "disappear" ] ; then
-	update-alternatives --remove privsep_helper /usr/bin/python2-privsep_helper
+	update-alternatives --remove privsep-helper /usr/bin/python2-privsep-helper
 fi
 
 #DEBHELPER#

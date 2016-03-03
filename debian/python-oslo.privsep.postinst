@@ -3,7 +3,7 @@
 set -e
 
 if [ "$1" = "configure" ] ; then
-	update-alternatives --install /usr/bin/privsep_helper privsep_helper /usr/bin/python2-privsep_helper 300
+	update-alternatives --install /usr/bin/privsep-helper privsep-helper /usr/bin/python2-privsep-helper 300
 fi
 
 #DEBHELPER#
